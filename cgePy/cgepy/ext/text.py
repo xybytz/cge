@@ -1,15 +1,9 @@
 __version__ = '0.7.1'
 
-try:
-	from cgePy.cgepy.colors import *
-	from cgePy.cgepy.__init__ import *
-except ModuleNotFoundError:
-	try:
-		from cgepy.cgepy.colors import *
-		from cgepy.cgepy.__init__ import *
-	except ModuleNotFoundError:
-		from cgepy.colors import *
-		from cgepy.__init__ import *
+from cgePy.cgepy.colors import *
+	
+from cgePy.cgepy.__init__ import *
+
 
 class empty:
 	'''The name says it all.'''
